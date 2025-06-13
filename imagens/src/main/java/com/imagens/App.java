@@ -34,6 +34,9 @@ public class App {
             System.out.println("Descrição: " + explanation);
             System.out.println("Imagem do dia: " + imageUrl);
 
+            // Chamada para baixar a imagem
+            ImageDownloader.downloadImage(imageUrl, "nasa_image.jpg");
+
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
